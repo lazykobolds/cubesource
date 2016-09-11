@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D093412-4931-4BB3-BE88-DA3E0D3A7CE9}</ProjectGuid>
+    <RootNamespace>personal_game</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>PGOptimize</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>PGOptimize</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Upside v2\Libraries;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Upside v2\Libraries;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN64;DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAsManaged>false</CompileAsManaged>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>pthreadVC2.lib;d3d9.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAsManaged>false</CompileAsManaged>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>pthreadVC2.lib;d3d9.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Components\CollidableComponent.cpp" />
+    <ClCompile Include="Components\CollisionComponent.cpp" />
+    <ClCompile Include="DirectX\Input.cpp" />
+    <ClCompile Include="DirectX\VertexTypes.cpp" />
+    <ClCompile Include="FBX Models\Animation.cpp" />
+    <ClCompile Include="FBX Models\AnimationController.cpp" />
+    <ClCompile Include="FBX Models\Mesh.cpp" />
+    <ClCompile Include="FBX Models\Model.cpp" />
+    <ClCompile Include="FBX Models\Skeleton.cpp" />
+    <ClCompile Include="Components\Chunk.cpp" />
+    <ClCompile Include="Game Objects\GameController.cpp" />
+    <ClCompile Include="Game Objects\GameEntity.cpp" />
+    <ClCompile Include="Graphics\Camera.cpp" />
+    <ClCompile Include="Graphics\Graphics Objects\AnimatedComponent.cpp" />
+    <ClCompile Include="Graphics\Graphics Objects\GraphicsComponent.cpp" />
+    <ClCompile Include="Graphics\Graphics Objects\LineComponent.cpp" />
+    <ClCompile Include="Graphics\Graphics Objects\MeshComponent.cpp" />
+    <ClCompile Include="Graphics\Graphics Objects\NoiseComponent.cpp" />
+    <ClCompile Include="Graphics\GraphicsEngine.cpp" />
+    <ClCompile Include="Graphics\Primatives.cpp" />
+    <ClCompile Include="Graphics\RenderFunctions.cpp" />
+    <ClCompile Include="Graphics\Shader.cpp" />
+    <ClCompile Include="Graphics\Trees.cpp" />
+    <ClCompile Include="Physics\IBoundingObject.h" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="noise.cpp" />
+    <ClCompile Include="NoiseLib.cpp" />
+    <ClCompile Include="Physics\BoundingObjects.cpp" />
+    <ClCompile Include="Physics\CollisionService.cpp" />
+    <ClCompile Include="Physics\GJK.cpp" />
+    <ClCompile Include="Physics\GravityTests.cpp" />
+    <ClCompile Include="Physics\PhysicsComponent.cpp" />
+    <ClCompile Include="Physics\SAT.cpp" />
+    <ClCompile Include="Systems\CollisionSystem.cpp" />
+    <ClCompile Include="Systems\TerrainSystem.cpp" />
+    <ClCompile Include="Threads\ThreadController.cpp" />
+    <ClCompile Include="Utilities\GridUtilities.cpp" />
+    <ClCompile Include="Utilities\IntersectionTests.cpp" />
+    <ClCompile Include="Utilities\LSystem.cpp" />
+    <ClCompile Include="Utilities\MathFunctions.cpp" />
+    <ClCompile Include="Utilities\MathLib.cpp" />
+    <ClCompile Include="Utilities\OctTree.cpp" />
+    <ClCompile Include="Utilities\VoxelMesh.cpp" />
+    <ClCompile Include="Voronoi.cpp" />
+    <ClCompile Include="VoronoiDiagramGenerator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="effect.fx" />
+    <None Include="images\ground.psd" />
+    <None Include="images\ground2.psd" />
+    <None Include="Libraries\pthreadVC2.dll" />
+    <None Include="personal_game.vcproj" />
+    <None Include="pthreadVC2.dll" />
+    <None Include="solidwireframe.fx" />
+    <None Include="tadfeet.bin" />
+    <None Include="transparent.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Components\BaseComponent.h" />
+    <ClInclude Include="Components\CollidableComponent.h" />
+    <ClInclude Include="Components\CollisionComponent.h" />
+    <ClInclude Include="Config\ConfigData.h" />
+    <ClInclude Include="DirectX\Input.h" />
+    <ClInclude Include="DirectX\VertexTypes.h" />
+    <ClInclude Include="FBX Models\Animation.h" />
+    <ClInclude Include="FBX Models\AnimationController.h" />
+    <ClInclude Include="FBX Models\Bone.h" />
+    <ClInclude Include="FBX Models\ChunkReader.h" />
+    <ClInclude Include="FBX Models\Mesh.h" />
+    <ClInclude Include="FBX Models\Model.h" />
+    <ClInclude Include="FBX Models\Skeleton.h" />
+    <ClInclude Include="Components\Chunk.h" />
+    <ClInclude Include="Game Objects\GameData.h" />
+    <ClInclude Include="Game Objects\GameEntity.h" />
+    <ClInclude Include="Game Objects\GameController.h" />
+    <ClInclude Include="Graphics\Camera.h" />
+    <ClInclude Include="Graphics\Graphics Objects\AnimatedComponent.h" />
+    <ClInclude Include="Graphics\Graphics Objects\GraphicsComponent.h" />
+    <ClInclude Include="Graphics\Graphics Objects\LineComponent.h" />
+    <ClInclude Include="Graphics\Graphics Objects\MeshComponent.h" />
+    <ClInclude Include="Graphics\Graphics Objects\NoiseComponent.h" />
+    <ClInclude Include="Graphics\GraphicsEngine.h" />
+    <ClInclude Include="Graphics\Primatives.h" />
+    <ClInclude Include="Graphics\RenderFunctions.h" />
+    <ClInclude Include="Graphics\Shader.h" />
+    <ClInclude Include="Graphics\Trees.h" />
+    <ClInclude Include="Include\pthread.h" />
+    <ClInclude Include="Include\sched.h" />
+    <ClInclude Include="Include\semaphore.h" />
+    <ClInclude Include="noise.h" />
+    <ClInclude Include="NoiseLib.h" />
+    <ClInclude Include="Physics\BoundingObjects.h" />
+    <ClInclude Include="Physics\CollisionService.h" />
+    <ClInclude Include="Physics\GJK.h" />
+    <ClInclude Include="Physics\GravityTests.h" />
+    <ClInclude Include="Physics\PhysicsComponent.h" />
+    <ClInclude Include="Physics\SAT.h" />
+    <ClInclude Include="Systems\CollisionSystem.h" />
+    <ClInclude Include="Systems\TerrainSystem.h" />
+    <ClInclude Include="Threads\ThreadController.h" />
+    <ClInclude Include="Utilities\Coordinate.h" />
+    <ClInclude Include="Utilities\Deallocators.h" />
+    <ClInclude Include="Utilities\GridUtilities.h" />
+    <ClInclude Include="Utilities\IntersectionTests.h" />
+    <ClInclude Include="Utilities\LSystem.h" />
+    <ClInclude Include="Utilities\MathFunctions.h" />
+    <ClInclude Include="Utilities\MathLib.h" />
+    <ClInclude Include="Utilities\OctTree.h" />
+    <ClInclude Include="Utilities\SharedResource.h" />
+    <ClInclude Include="Utilities\VoxelMesh.h" />
+    <ClInclude Include="Voronoi.h" />
+    <ClInclude Include="VoronoiDiagramGenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libraries\pthreadVC2.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\ground.png" />
+    <Image Include="images\ground2.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

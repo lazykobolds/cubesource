@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{775212a3-e5f4-4bb5-8ac8-c1ccc4426259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{b4d7b738-a2fb-4c00-8701-1820acde856c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\DirectX">
+      <UniqueIdentifier>{7c0a9e18-8f7a-45e8-9b2c-1d7380388d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\FBX Models">
+      <UniqueIdentifier>{be9a55a4-2ec0-4248-aeba-ee3da41c879d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Graphics Objects">
+      <UniqueIdentifier>{35c56df6-6c9b-4604-b3a2-c0364fa42abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Objects">
+      <UniqueIdentifier>{dcc8dc15-c021-4618-ba39-3377a5bffb9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{1c2ac431-55d8-41d3-b9f0-09a7d5d91c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Bounding Objects">
+      <UniqueIdentifier>{51d1772b-e466-4c38-83be-7ab3ba1523a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threads">
+      <UniqueIdentifier>{a26d0ba4-3033-4a1c-8c01-428d4ce79773}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Graphics\GraphicsEngine.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Camera.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Shader.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\VertexTypes.cpp">
+      <Filter>Graphics\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="FBX Models\Animation.cpp">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClCompile>
+    <ClCompile Include="FBX Models\AnimationController.cpp">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClCompile>
+    <ClCompile Include="FBX Models\Mesh.cpp">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClCompile>
+    <ClCompile Include="FBX Models\Model.cpp">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClCompile>
+    <ClCompile Include="FBX Models\Skeleton.cpp">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Graphics\Primatives.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Graphics Objects\GraphicsComponent.cpp">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Graphics Objects\MeshComponent.cpp">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Game Objects\GameEntity.cpp">
+      <Filter>Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Game Objects\GameController.cpp">
+      <Filter>Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Graphics Objects\AnimatedComponent.cpp">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderFunctions.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX\Input.cpp">
+      <Filter>Graphics\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\BoundingObjects.cpp">
+      <Filter>Physics\Bounding Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\GravityTests.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\PhysicsComponent.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Trees.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Graphics Objects\LineComponent.cpp">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="noise.cpp" />
+    <ClCompile Include="Graphics\Graphics Objects\NoiseComponent.cpp">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Voronoi.cpp" />
+    <ClCompile Include="VoronoiDiagramGenerator.cpp" />
+    <ClCompile Include="Physics\GJK.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\SAT.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Threads\ThreadController.cpp">
+      <Filter>Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="NoiseLib.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\IBoundingObject.h">
+      <Filter>Physics\Bounding Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics\CollisionService.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\TerrainSystem.cpp" />
+    <ClCompile Include="Components\Chunk.cpp">
+      <Filter>Game Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\GridUtilities.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\IntersectionTests.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\LSystem.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\MathFunctions.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\MathLib.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\OctTree.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\VoxelMesh.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Components\CollisionComponent.cpp" />
+    <ClCompile Include="Components\CollidableComponent.cpp" />
+    <ClCompile Include="Systems\CollisionSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="effect.fx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="solidwireframe.fx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="transparent.fx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tadfeet.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="pthreadVC2.dll" />
+    <None Include="personal_game.vcproj" />
+    <None Include="Libraries\pthreadVC2.dll" />
+    <None Include="images\ground.psd" />
+    <None Include="images\ground2.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graphics\Shader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GraphicsEngine.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Camera.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\VertexTypes.h">
+      <Filter>Graphics\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="FBX Models\Animation.h">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClInclude>
+    <ClInclude Include="FBX Models\AnimationController.h">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClInclude>
+    <ClInclude Include="FBX Models\Bone.h">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClInclude>
+    <ClInclude Include="FBX Models\ChunkReader.h">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClInclude>
+    <ClInclude Include="FBX Models\Mesh.h">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClInclude>
+    <ClInclude Include="FBX Models\Model.h">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClInclude>
+    <ClInclude Include="FBX Models\Skeleton.h">
+      <Filter>Graphics\FBX Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Primatives.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Graphics Objects\GraphicsComponent.h">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Graphics Objects\MeshComponent.h">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Game Objects\GameEntity.h">
+      <Filter>Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Game Objects\GameController.h">
+      <Filter>Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Graphics Objects\AnimatedComponent.h">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderFunctions.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX\Input.h">
+      <Filter>Graphics\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\BoundingObjects.h">
+      <Filter>Physics\Bounding Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\GravityTests.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\PhysicsComponent.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Trees.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Graphics Objects\LineComponent.h">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="noise.h" />
+    <ClInclude Include="Graphics\Graphics Objects\NoiseComponent.h">
+      <Filter>Graphics\Graphics Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Voronoi.h" />
+    <ClInclude Include="VoronoiDiagramGenerator.h" />
+    <ClInclude Include="Physics\GJK.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\SAT.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Threads\ThreadController.h">
+      <Filter>Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="Game Objects\GameData.h">
+      <Filter>Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="NoiseLib.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics\CollisionService.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\pthread.h" />
+    <ClInclude Include="Include\sched.h" />
+    <ClInclude Include="Include\semaphore.h" />
+    <ClInclude Include="Systems\TerrainSystem.h" />
+    <ClInclude Include="Components\Chunk.h">
+      <Filter>Game Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\BaseComponent.h" />
+    <ClInclude Include="Utilities\Coordinate.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Deallocators.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\GridUtilities.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\IntersectionTests.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\LSystem.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\MathFunctions.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\MathLib.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\OctTree.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\SharedResource.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\VoxelMesh.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\CollisionComponent.h" />
+    <ClInclude Include="Components\CollidableComponent.h" />
+    <ClInclude Include="Systems\CollisionSystem.h" />
+    <ClInclude Include="Config\ConfigData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libraries\pthreadVC2.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\ground.png" />
+    <Image Include="images\ground2.png" />
+  </ItemGroup>
+</Project>
